@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item">
+                    Event loop is what allows node.js to perform non-blocking I/O operations, irrespective of the fact
+                    that javascript is single threaded - by offloading operations to the system kernel whenever
+                    possible
+                </li>
+                <li class="content-item">
+                    when nodejs starts, it initializes the event loop, processes the provided input script which may be
+                    async api calls, schedule timers, or call process.nexTick(), then begins processing the event loop
+                </li>
+                <li>
+                    Order of operations in event loop are as follows. Each block is referred to as phase
+                    <img src="{{ url_for('static', filename='event_loop.png') }}" alt="Smiley face" height="250" width="350" style="display:block;">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

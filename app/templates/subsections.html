@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="content-section-listing">
+            <div>
+                <div class="subsection-heading"> {{sections[section]['heading']}}</div>
+                <ul>
+                    {% if subsections %}
+                    {% for subsection in subsections%}
+                    <li class="course-item" onclick="onSubSectionClick('{{section}}','{{subsection}}')">{{subsections[subsection]}}</li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

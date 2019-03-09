@@ -1,0 +1,20 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="head-banner-body">
+        <!-- <img src="{{ url_for('static', filename='logo.png') }}" alt="Smiley face" height="45" width="45"> -->
+        <div class="main-banner" onclick=location.href="{{ url_for('home') }}">
+            Knowledge Resource
+        </div>
+
+        <div class="user-name">
+            Admin
+        </div>
+        <button type="submit" class="logout-button" onclick=location.href="{{ url_for('index') }}">Logout</button>
+    </div>
+</body>
+
+</html>

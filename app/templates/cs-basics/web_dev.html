@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+
+    <div class="content-section">
+       <div class="subsection-heading">             <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div> /             {{heading}}         </div>
+        <div class="content-section-listing">
+
+            <ul>
+                <li class="content-item">Scripts: Programs that automate the execution of tasks</li>
+                <li class="content-item">Web application : client-server software application</li>
+                <li class="content-item">Web Framework : software framework that is designed to support the development
+                    of web applications</li>
+                <li class="content-item">
+                    Application server :
+                    <ul>
+                        <li class="content-item"> Software framework that provides both facilities to create web
+                            applications and a server
+                            environment to run them
+                        </li>
+                        <li class="content-item">hosts and exposes business logic and processes</li>
+                        <li class="content-item">Acts as an intermediate between the web server and the database server</li>
+                    </ul>
+                </li>
+                <li class="content-item">
+                    Web server :
+                    <ul>
+                        <li class="content-item"> computer system that processes request via HTTP, the basic protocol
+                            used to distribute
+                            information on the world wide web
+                        </li>
+                        <li class="content-item">Deliver web pages and other content to the users</li>
+                        <li class="content-item"> serves content to the web using http protocol. </li>
+                        <li class="content-item"> Ex - apache</li>
+                    </ul>
+                </li>
+                <li class="content-item">
+                    Solid Principle :
+                    <ul>
+                        <li class="content-item"> S - Single Responsibility
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp; Class should have only single responsibility
+
+                        </li>
+                        <li class="content-item"> O - open closed
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp; Software entities should be open for extension
+                            and closed for
+                            modification</li>
+                        <li class="content-item"> L - Liskov substitution
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp; Objects in a program should be replacable with
+                            the instances
+                            of their subtypes
+                            without
+                            affecting the correctness
+                        </li>
+                        <li class="content-item"> I - Interface aggregation
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp;No client should be forced to depend on methods
+                            it does not
+                            use. Modularity should be
+                            achieved by dividing into small functions</li>
+                        <li class="content-item"> D - Dependency Inversion
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp; Decoupling software modules
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;§ &nbsp; Abstraction layer should be introduced
+                        </li>
+                </li>
+            </ul>
+            </li>
+            <li class="content-item"> Server side scripting : employing scripts on a web server which produce
+                response customized for
+                each user request
+            </li>
+            <li class="content-item"> Client Side scripting : changing the interface behavior in response to mouse
+                or keyboard actions
+                or at specified timing events. Content is generated on the user's local system
+            </li>
+            <li class="content-item"> Web Service : web service is a method of communication that allows two
+                software systems to
+                exchange this data over the internet
+            </li>
+            <li class="content-item"> Web API: A Web API is a development in web services
+            </li>
+            <li class="content-item">Web Resources : documents or files identified by their urls</li>
+            <li class="content-item">Micro Framework : minimalistic web application frameworks
+                ○ Lacks in functionality of - accounts authentication,authorization,roles..etc
+                ○ Specially designed for building the API's for another service or application
+            </li>
+            <li class="content-item">
+                Dependency Injection :
+                Technique whereby one object supplies the dependency of other object
+            </li>
+            <li class="content-item">
+                Stateless protocol:
+                ○ Each request is treated as independent transaction
+                ○ Session information or status of request is not retained
+                ○ Ex : IP, HTTP
+            </li>
+            <li class="content-item">
+                RESTful API : web services API that adhere to the REST architectural patterns are called RESTFUL
+                api
+            </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

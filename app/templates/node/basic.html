@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+       <div class="subsection-heading">             <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div> /             {{heading}}         </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item"> Open-source, cross-platform runtime environment used for development of
+                    server-side web applications </li>
+                <li class="content-item"> based on an event-driven architecture and a non-blocking Input/Output API </li>
+                <li class="content-item"> Asynchronous event driven IO helps concurrent request handling</li>
+                <li class="content-item"> node.js is best when processing needs less dedicated CPU time.</li>
+                <li class="content-item"> On windows, the node package manager is known as Chocolatey</li>
+                <li class="content-item"> The basic functionality of the "require" function is that it reads
+                    a javascript file, executes
+                    the
+                    file, and then proceeds to return an object</li>
+                <li class="content-item"> A module in Node.js is a logical encapsulation of code in a single unit</li>
+                <li class="content-item"> Express framework – Express is a minimal and flexible Node js web application
+                    framework that
+                    provides
+                    a robust set of features for the web and Mobile applications
+                <li class="content-item">Socket.io - Socket.IO enables real-time bidirectional event-based
+                    communication. This module is
+                    good
+                    for creation of chatting based applications.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

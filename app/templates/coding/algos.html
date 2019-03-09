@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+       <div class="subsection-heading">             <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div> /             {{heading}}         </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item"> Complete Binary Tree Implementation</li>
+                <li class="content-item"> For chocolate wrapper puzzle did not understand how that formula ha arrived</li>
+                <li class="content-item"> Longest common subsequence - DP</li>
+                <li class="content-item"> All longest common subsequences </li>
+                <li class="content-item"> Iterative traversals -- preorder,postoreder,inorder </li>
+                <li class="content-item"> Inorder traversal without using stack or recursion </li>
+                <li class="content-item"> Applications of Depth First and Breadh-first traversal</li>
+                <li class="content-item"> Sorting and searching algorithms </li>
+                <li class="content-item"> Applications of exponential binary search </li>
+                <li class="content-item"> Why Merge Sort divides input array in two halves, why not in three or more
+                    parts? (related to ternary search)
+                </li>
+                <li class="content-item"> Binary Insertion Sort </li>
+                <li class="content-item"> Split wise algorithm </li>
+                <li class="content-item"> Amortized Complexity </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            /
+            {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <ol>
+                <li class="content-item">
+                    <div class="new-line-item">Array Rotation:</div>
+                    <div class="new-line-item"><b>○ Solution</b> : </div>
+                    <ul>
+                        <li class="content-item">
+                            <div class="new-line-item add-left-space"> <b>In-place rotation</b> <a href="https://www.geeksforgeeks.org/array-rotation/">(refer)</a>
+                                - in this solution the
+                                array is rotated in-place by
+                                computing the new
+                                index value for the current index
+                            </div>
+                            <div class="new-line-item add-left-space">○ New index is calculated by using
+                                the
+                                formula
+                            </div>
+                            <div class="new-line-item add-left-space">○ newIndex = (currentIndex -
+                                (no_of_rotation % array_length) +
+                                array_length) % array_length
+                            </div>
+                            <div class="new-line-item add-left-space">○ currIndex is looped through the
+                                length
+                                of array, and swap the
+                                elements of (currentIndex,newIndex)
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Time Complexity : O(n)
+                                <br>
+                                ○ Space Complexity : O(1)
+                            </div>
+                        </li>
+                        <li class="content-item">
+                            <div class="new-line-item add-left-space"> <b>Array Reversal Algorithm</b> <a href="https://www.geeksforgeeks.org/array-rotation/">(refer)</a>
+                                - in this solution array is divided in to two parts
+                                <br>
+                                ○ Input Arr - array, d- number of rotations
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ A = [0,d-1] B=[d,n-1]
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Reverse array A => Arev
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Reverse array B => Brev
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Combine Arev,Brev => Ares = [Arev,Brev]
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Reverse Ares, the result of this step will be the output array
+                            </div>
+                            <div class="new-line-item add-left-space">
+                                ○ Time Complexity : O(n)
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+        </div>
+    </div>
+</body>
+
+</html>

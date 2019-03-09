@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+       <div class="subsection-heading">             <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div> /             {{heading}}         </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item"> Faster because of lazy loading technique </li>
+                <li class="content-item"> Lazy loading Technique - It is a design pattern commonly used in computer
+                    programming to defer
+                    initialization until it is actually needed
+                </li>
+                <li class="content-item"> Don’t repeat yourself concept - reducing repetation of information of all
+                    kinds
+                </li>
+                <li class="content-item"> Powerful class code generator - gii </li>
+                <li class="content-item">Yii2 objects- models,views,controllers,components,application components,
+                    widgets,filters,modules,extensions</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

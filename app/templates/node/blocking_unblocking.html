@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item">
+                    Blocking is when the execution of additional javascript in the node.js process must wait
+                    until a non-js operation completes, i.e., because event loop is unable to continue running js
+                    while a blocking operation is occuring.
+                </li>
+                <li class="content-item">
+                    All I/O methods in node.js standard library provide asynchronous versions which are non-blocking
+                    and accept callback functions
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

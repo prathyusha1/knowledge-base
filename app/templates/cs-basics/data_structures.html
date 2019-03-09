@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item"> Array </li>
+                <ul>
+                    <li class="content-item">Array is collection of items stored at contiguous memory locations</li>
+                    <li class="content-item"> <b>Advantages:</b>
+                        <br>
+                        ○ Allows random access of elements. This makes accessing elements by position faster
+                        <br>
+                        ○ Have better <a href="https://en.wikipedia.org/wiki/Locality_of_reference">cache locality </a>,
+                        that
+                        makes pretty big difference in performance</a>
+                        <br>
+                        <br>
+                        <b>Syntax in C/C++ : <a href="https://www.geeksforgeeks.org/arrays-in-java/">refer</a></b>
+                        <br>
+                        ○ declatation by size : int arr[10];
+                        <br>
+                        ○ declaration by initializing elements : int arr = {1,2,3,4};
+                        <br>
+                        ○ declaration by specifying size and initializing elements : int arr[6] = {1,2,3,4}
+                        <br>
+                        <br>
+                        <b>Syntax in python: <a href="https://www.geeksforgeeks.org/array-python-set-1-introduction-functions/">refer</a></b>
+                        <br>
+                        ○ In python array can be handled using the module "array"
+                        <br>
+                        ○ import array
+                        ○ arr = array.array('i', [1, 2, 3])
+                        <br>
+                        ○ append() -> used to add the value mentioned in the arguments at the end of array
+                        <br>
+                        ○ insert(i,x )->adds the value x in the array at specified position i
+                        <br>
+                        ○ pop() -> removes the element at the position mentioned in the arguments
+                        <br>
+                        ○ remove() -> removes the first occurance of value mentioned in argument
+                    </li>
+
+                </ul>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

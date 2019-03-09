@@ -1,0 +1,52 @@
+keywords: develop, run, ship
+
+=> Docker - for building
+
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <li class="content-item"> Docker is a container management services.</li>
+            <li class="content-item"> Keywords: Develop, ship, run anywhere.</li>
+            <li class="content-item">
+                <b>Docker Hub: </b>
+                <ul>Registry service for docker which allows us to download images
+                    developed by other communities
+                </ul>
+                <ul>
+                    pulling images from docker -> docker pull {image-name}
+                </ul>
+            </li>
+            <li class="content-item">
+                <b> Docker Images: </b>
+                <ul>Everything is based on images in docker</ul>
+                <ul>Image : combination of file system and parameters</ul>
+            </li>
+            <li class="content-item">
+                docker run {image}-> create an instance of image,
+                which is then called container
+            </li>
+            <li class="content-item">
+                <b>Docker Containers</b>
+                <ul>Containers: Instances of docker images that can be run using docker command</ul>
+                <ul>Basic purpose of docker is to run containers</ul>
+            </li>
+            <li class="content-item"></li>
+            <li class="content-item"></li>
+            <li class="content-item"></li>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+       <div class="subsection-heading">             <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div> /             {{heading}}         </div>
+        <div class="content-section-listing">
+            <ul>
+                <li class="content-item"> PHP MICRO FRAMEWORK </li>
+                <li class="content-item"> Helps to write simple and powerful web applications and API's</li>
+                <li class="content-item"> Slim is a dispatcher that receives http request,, invokes anappropriate
+                    routine and returns HTTP response </li>
+                <li class="content-item"> Dependency Container : to prepare, manage and inject application
+                    dependencies
+                </li>
+                <li class="content-item">Yii2 objects- models,views,controllers,components,application components,
+                    widgets,filters,modules,extensions</li>
+                <ul>
+                    Features :
+                    <li class="content-item"> HTTP router : fast and powerful router</li>
+                    <li class="content-item"> Middleware : tweak http request and response objects</li>
+                    <li class="content-item"> PSR-7 : inspect and manipulate HTTP message method,status,Uri… </li>
+                    <li class="content-item"> Dependency Injection : </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

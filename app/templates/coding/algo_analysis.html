@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            Ways to find out the betterness of an algorithm compared to other one
+            <ol>
+                <li class="content-item">
+                    <b>Asmptotic Analysis</b> : Behavior of algorithm as it approaches infinity
+                    <div>
+                        In this approach of analysis, the performance of an algorithm is evaluated in terms of input
+                        size.i.e., calculate time(or space) taken by an algo increase with input size
+                    </div>
+                    <div>
+                        Example : How to compare linear search and Binary search of a sorted array with asymptotic
+                        analysis
+                        <br>
+                        Run linear search on fast computer and binary search on slow computer, for small values of
+                        input array size n fast computer may taken
+                        less time but after certain value of input size binary search will take less time
+                        comparatively, since the machine dependent constants can
+                        be ignored after certain value of input
+
+                    </div>
+
+                </li>
+                <li class="content-item">
+                    <div> Analysis based on worst case, best case and average case</div>
+                    <div><b>Worst case analysis : </b> Calculate the upper bound on running time of algorithm, i.e.,
+                        identify the case that causes
+                        maximum number of operations
+                    </div>
+                    <div> <b>Average Case Analysis: </b> Take all possible inputs and calculate computing time for all
+                        the inputs
+                        (sum all calculated values)/(total number of inputs)
+                    </div>
+                    <div>
+                        <b>Best case Analysis: </b>
+                        Calculate lower bound on running time of algorithm
+                    </div>
+
+
+                </li>
+                </ul>
+        </div>
+    </div>
+</body>
+
+</html>

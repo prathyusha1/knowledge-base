@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    {% include 'static-support.html' %}
+</head>
+
+<body>
+    {% include 'head-banner.html' %}
+    <div class="content-section">
+        <div class="subsection-heading">
+            <div class="subsection-heading-section-name" onclick=location.href="{{ url_for('subsection', section=sectionKey) }}">{{sectionName}}</div>
+            / {{heading}}
+        </div>
+        <div class="content-section-listing">
+            <ul>
+                <div> <b>Object-based vs Object Oriented: </b> Object-based programming languages follow all the oops
+                    except the inheritance. Ex: Javascript, VBScript</div>
+                <li class="content-item">
+                    <b>Object: </b> Real world entity such as pen, chair, table, computer, watch etc.,
+                </li>
+                <li class="content-item">
+                    <b>Object-Oriented Programming: </b> Methodology or paradigm to design a program using classes and
+                    objects. Simplifies software development
+                    and maintanence by providing some concepts
+                </li>
+                <ul>
+                    <b> Objects and Classes:</b>
+                    <li>
+                        Object: It is both physical and Logical Entity. Entity which has state and behavior is object.
+                        <br>
+                        Object has three characteristics - state, behavior, identity
+                        <br>
+                        Object is an instance of class
+                        <br>
+                        Class in java can contain:
+                        <br>
+                        Fields
+                        <br>
+                        Methods
+                        <br>
+                        Constructors
+                        <br>
+                        Blocks
+                        <br>
+                        Nested class and interface
+                    </li>
+
+                    <li>
+                        <b> Class:</b> It is only Logical Entiry. Class is a template or blue print from which objects are
+                        created. Group of objects which has common properties
+                    </li>
+                    <li>
+                        <b>Inheritance:</b> When one object aquires properties and behaviors of a parent object.
+                        Provides code reusability
+                    </li>
+                    <li>
+                        <b>Polymorphism: </b> If one task is performed in different ways, it is known as Polymorphism.
+                        Method overloading and method overriding in java are used to acheive Polymorphism
+                    </li>
+                    <li>
+                        <b>Abstraction: </b> Hiding internal details and showing functionality is known as Abstraction.
+                        In java abstract classes and interfaces are used to acheive Abstraction
+                    </li>
+                    <li>
+                        <b>Encapsulation: </b> Binding or wrapping code into a single unit is called as encapsulation.
+                    </li>
+
+
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
