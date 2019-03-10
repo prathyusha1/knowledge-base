@@ -50,3 +50,5 @@ git remote set-url origin https://prathyusha1@github.com/prathyusha1/knowledge-b
 https://github.com/prathyusha1/knowledge-base
 
 user name change
+
+git commit --author="prathyushabandela <prathyushabandela1@gmail.com>"
