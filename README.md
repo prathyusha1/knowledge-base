@@ -48,3 +48,5 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 git remote set-url origin https://prathyusha1@github.com/prathyusha1/knowledge-base.git
 
 https://github.com/prathyusha1/knowledge-base
+
+user name change
